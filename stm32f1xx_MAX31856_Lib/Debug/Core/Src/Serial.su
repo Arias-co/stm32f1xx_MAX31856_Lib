@@ -1,0 +1,3 @@
+Serial.cpp:53:6:virtual void Serial::write(uint8_t*)	16	static
+Serial.cpp:10:1:Serial::Serial(UART_HandleTypeDef*)	16	static
+Serial.cpp:16:6:void Serial::receive(uint8_t*, uint16_t, Mode_timeout_t)	24	static

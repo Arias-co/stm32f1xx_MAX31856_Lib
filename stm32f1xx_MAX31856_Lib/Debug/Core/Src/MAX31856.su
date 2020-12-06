@@ -1,0 +1,21 @@
+MAX31856.cpp:10:1:MAX31856::~MAX31856()	0	static
+MAX31856.cpp:10:1:virtual MAX31856::~MAX31856()	8	static
+MAX31856.cpp:24:1:MAX31856::MAX31856(SPI_HandleTypeDef*, GPIO_TypeDef*, uint16_t)	12	static
+MAX31856.cpp:95:19:conversion_mode_t MAX31856::getConversionMode()	0	static
+MAX31856.cpp:316:6:void MAX31856::readRegisterN(uint8_t, uint8_t*, uint16_t)	40	static
+MAX31856.cpp:279:9:uint8_t MAX31856::readRegister8(uint8_t)	16	static
+MAX31856.cpp:120:20:thermocoupletype_t MAX31856::getThermocoupleType()	8	static
+MAX31856.cpp:134:9:uint8_t MAX31856::readFault()	0	static
+MAX31856.cpp:224:6:bool MAX31856::conversionComplete()	8	static
+MAX31856.cpp:288:10:uint16_t MAX31856::readRegister16(uint8_t)	16	static
+MAX31856.cpp:237:7:float MAX31856::readCJTemperature()	8	static
+MAX31856.cpp:301:10:uint32_t MAX31856::readRegister24(uint8_t)	16	static
+MAX31856.cpp:332:6:void MAX31856::writeRegister8(uint8_t, uint8_t)	16	static
+MAX31856.cpp:72:6:void MAX31856::setConversionMode(conversion_mode_t)	8	static
+MAX31856.cpp:41:6:bool MAX31856::begin(thermocoupletype_t, averageSample_t, conversion_mode_t)	24	static
+MAX31856.cpp:106:6:void MAX31856::setThermocoupleType(thermocoupletype_t)	16	static
+MAX31856.cpp:147:6:void MAX31856::setColdJunctionFaultThreshholds(int8_t, int8_t)	16	static
+MAX31856.cpp:161:6:void MAX31856::setNoiseFilter(noise_filter_t)	16	static
+MAX31856.cpp:183:6:void MAX31856::setTempFaultThreshholds(float, float)	16	static
+MAX31856.cpp:206:6:void MAX31856::triggerOneShot()	8	static
+MAX31856.cpp:249:7:float MAX31856::readThermocoupleTemperature()	16	static
