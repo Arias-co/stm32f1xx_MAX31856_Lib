@@ -317,11 +317,17 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+/*
+ * Calcula la Media Móvil Exponencial (EMA) de una señal de entrada.
+ * Utiliza el método de suavizado exponencial para filtrar la señal.
+ * @param signal - Valor de la señal de entrada.
+ * @return El valor filtrado utilizando EMA.
+ */
 
 float filter1( float signal )
 {
-    float alpha = 0.07; // alpha = 2/(n+1) -- n es el numero de muestras a promediar
-    static float s = signal;
+    float alpha = 0.07f; // alpha = 2/(n+1) -- n es el numero de muestras a promediar
+    static float s = 0.0f;
     // EMA = (alpha * ValorActual) + (( 1 - alpha) * EMA_anterior)
     s = ( alpha * signal ) + ( ( 1 - alpha ) * s );
     return s;
@@ -329,8 +335,8 @@ float filter1( float signal )
 
 float filter2( float signal )
 {
-    float alpha = 0.07; // alpha = 2/(n+1) -- n es el numero de muestras a promediar
-    static float s = signal;
+    float alpha = 0.07f; // alpha = 2/(n+1) -- n es el numero de muestras a promediar
+    static float s = 0.0f;
     // EMA = (alpha * ValorActual) + (( 1 - alpha) * EMA_anterior)
     s = ( alpha * signal ) + ( ( 1 - alpha ) * s );
     return s;
